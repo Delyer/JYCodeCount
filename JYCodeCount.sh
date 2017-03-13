@@ -33,7 +33,7 @@ function inputFilePath(){
 
 function inputSuffixName(){
     suffixCount=0
-    echo -n '输入你需要统计文件的后缀名（如.a .n .swift .java)'
+    echo -n '输入你需要统计文件的后缀名（如.h .c .m .swift .java)'
     echo '按下 <CTRL+D> 结束输入'
     while read FILM
     do
