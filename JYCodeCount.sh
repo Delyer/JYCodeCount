@@ -39,8 +39,8 @@ function inputSuffixName(){
     echo '按下 <CTRL+D> 结束输入'
     while read FILM
     do
-    suffixArray[$suffixCount]=$FILM
-    let suffixCount++
+        suffixArray[$suffixCount]=$FILM
+        let suffixCount++
     done
 }
 
@@ -65,7 +65,7 @@ function readfile(){
     if [ -d $1"/"${file} ]
         then
             #如果子文件夹则递归
-        readfile $1"/"${file} ${codeLine}
+            readfile $1"/"${file} ${codeLine}
         else
             #否则就能够读取该文件的地址
             filePath=$1"/"${file}
@@ -120,10 +120,10 @@ function outputInfo(){
     echo "项目代码总行数为：$codeLine"
     for((i=0;i<${#suffixArray[@]};i++))
     do
-    #后缀名
-    suffixName=${suffixArray[$i]}
-    count=${fileNumArray[$i]}
-    echo "${suffixName}文件数为：${count}"
+        #后缀名
+        suffixName=${suffixArray[$i]}
+        count=${fileNumArray[$i]}
+        echo "${suffixName}文件数为：${count}"
     done
     echo "-----------------------------"
 
