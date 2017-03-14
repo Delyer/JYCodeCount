@@ -1,9 +1,11 @@
 #/bin/bash
 
-echo "******************************"
-echo "         统计项目的代码行数       "
-echo "         author: Dely         "
-echo "******************************"
+echo "************************************"
+echo "         统计项目的代码       "
+echo "         author: Dely        "
+echo "         微信: Delyer521      "
+echo "         邮箱: jiayaoit@126.com "
+echo "************************************"
 
 
 echo "请输入项目绝对路径(如：/Users/admin/Desktop/project):"
