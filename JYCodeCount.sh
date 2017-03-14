@@ -39,7 +39,6 @@ function inputSuffixName(){
     do
     suffixArray[$suffixCount]=$FILM
     let suffixCount++
-    echo "suffixArray = ${suffixArray[@]}"
     done
 }
 
@@ -130,12 +129,11 @@ function outputInfo(){
 
 #脚本过程
 inputFilePath
-
 inputSuffixName
-
 rmCachefile
 folder=${projectPath}
 cd ${projectPath}
+echo "请等待,统计中..."
 readfile "."
 readLineAndFile
 outputInfo
